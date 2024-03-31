@@ -25,13 +25,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Image upload
     $image = NULL;
-    if (!empty($_FILES["image"]["tmp_name"])) {
+    if (!empty($_FILES["image"]["tmp_name"]) && is_uploaded_file($_FILES["image"]["tmp_name"])) {
         $image = file_get_contents($_FILES["image"]["tmp_name"]);
     }
 
     // Video upload
     $video = NULL;
-    if (!empty($_FILES["video"]["tmp_name"])) {
+    if (!empty($_FILES["video"]["tmp_name"]) && is_uploaded_file($_FILES["video"]["tmp_name"])) {
         $video = file_get_contents($_FILES["video"]["tmp_name"]);
     }
 

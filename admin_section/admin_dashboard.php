@@ -14,14 +14,13 @@
 <body>
 <div class="grid-container">
     <!-- Header -->
-    <header class="header">
+
         <div class="menu-icon" onclick="openSidebar()">
             <span class="material-icons-outlined">menu</span>
         </div>
        
      
-    </header>
-    <!-- End Header -->
+  
 
     <!-- Sidebar -->
     <aside id="sidebar">
@@ -38,10 +37,16 @@
                 </a>
             </li>
             <li class="sidebar-list-item">
-                <a href="admin_prac.php" >
-                    <span class="material-icons-outlined">groups</span> List of Reports
-                </a>
-            </li>
+    <a href="admin_prac.php">
+        <span class="material-icons-outlined">groups</span> 
+        <span>List of Reports</span>
+    </a>
+</li>
+<li class="sidebar-list-item">
+                    <a href="archive_report.php">
+                        <span class="material-icons-outlined">archive</span> Archived Reports
+                    </a>
+                </li>
          
            
         </ul>
