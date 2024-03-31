@@ -25,6 +25,7 @@ if (isset($_GET['reset'])) {
     }
 } else {
     header("Location: forgot-password.php");
+    
 }
 
 ?>
